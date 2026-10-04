@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "CP2102-GM") (type "KiCad") (uri "${KIPRJMOD}/assets/CP2102-GM.kicad_sym") (options "") (descr ""))
+)
