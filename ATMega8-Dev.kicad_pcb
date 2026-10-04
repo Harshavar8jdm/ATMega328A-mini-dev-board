@@ -7,6 +7,13 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "ATMega328A-dev-board")
+		(date "2026-10-04")
+		(rev "V1.0")
+		(company "Luftgekuhlt")
+		(comment 1 "Designed by: Harsha")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
@@ -34,6 +41,45 @@
 		(45 "User.4" user)
 	)
 	(setup
+		(stackup
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 1"
+				(type "core")
+				(thickness 1.51)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+			)
+			(copper_finish "None")
+			(dielectric_constraints no)
+		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting
@@ -1446,7 +1492,8 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
+					(thickness 0.2)
+					(bold yes)
 				)
 			)
 		)
@@ -2332,7 +2379,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C2"
-			(at 0 -1.68 90)
+			(at -2.9875 0.05 90)
 			(layer "F.SilkS")
 			(uuid "893834e0-2ce5-4118-9741-d2335a90b133")
 			(effects
@@ -3015,7 +3062,7 @@
 		(descr "Through hole straight socket strip, 1x06, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 1x06 2.54mm single row")
 		(property "Reference" "J4"
-			(at 0 -2.77 90)
+			(at 0 -2.5 90)
 			(layer "F.SilkS")
 			(uuid "2c561921-0277-4821-a4ee-89ac0f8063b8")
 			(effects
@@ -9408,6 +9455,14 @@
 		(uuid "6329ca5e-3e9e-4480-8bf2-c3ca0dfe1215")
 	)
 	(via
+		(at 164.5 122)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "GND")
+		(uuid "6338a672-676b-4359-8c9a-ec4167d10c73")
+	)
+	(via
 		(at 133.75 94.5)
 		(size 0.6)
 		(drill 0.3)
@@ -9486,6 +9541,14 @@
 		(layers "F.Cu" "B.Cu")
 		(net "GND")
 		(uuid "757bde58-9023-49a7-8315-ae70bdff6ed4")
+	)
+	(via
+		(at 164.5 120.5)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "GND")
+		(uuid "76fa9d07-7bfa-4e34-b7a4-527b02344890")
 	)
 	(via
 		(at 128.5 124)
